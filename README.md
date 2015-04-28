@@ -1,4 +1,4 @@
-# Data-driven, entrepreneurial, computational journalism educational resources, lectures, activities
+## Data-driven, entrepreneurial, computational journalism educational resources, lectures, activities
 C. 2015 [Carl V. Lewis](http://carlvlew.is). MIT License.
 
 + **23 April 2015**: Fixed a bug that prevented certain documents from being passed through iCloud. Added full reference contact directory.
