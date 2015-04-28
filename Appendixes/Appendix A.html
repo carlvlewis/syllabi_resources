@@ -10,86 +10,157 @@
    This document has been created with Marked.app <http://markedapp.com>, Copyright 2011 Brett Terpstra
    Please leave this notice in place, along with any additional credits below.
    ---------------------------------------------------------------
-   Title: Academia
-   Author: David Smith <http://www.davidsmith.name>
-   Description: A basic theme for displaying academic documents.
+   Title: Pandoctor
+   Author: Stephen Margheim
+   Description: Clean, academic paper style
 */
-body {
-    -webkit-font-smoothing: antialiased;
-    font-style: normal;
-    font-size: 12pt;
-    font-family; "Hoefler Text", Palatino, Georgia, Times, Serif;
-	text-align: justify;
-	hyphens: auto;
-	width: 825px;
-	margin: auto;
+
+/*** Font Definitions ***/
+@font-face {
+    font-family: "Hoefler Text";
+}
+@font-face {
+    font-family: "Consolas";
 }
 
-
-li {
-    font-size: 110%;
-}
-
-li li {
+/*** Style Definitions ***/
+html {
     font-size: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+body, div, p {
+    -webkit-font-smoothing: antialiased;
+    color: #111;
+    font-family: "Hoefler Text";
+    hyphens: auto;
+    margin: 0in;
+    text-align: justify;
+    text-indent: .25in;
+    line-height: 200%;
+    pagination: widow-orphan;
+    font-size: 12pt;
+}
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #111;
+    margin-top: 20.0pt;
+    margin-right: 0in;
+    margin-bottom: 10.0pt;
+    margin-left: 0in;
+    text-indent: 0;
+    line-height: 100%;
+}
+h1, h2, h3 {
+    font-size: 12pt;
+}
+h4, h5, h6 {
+    font-size: 11pt;
+}
+h1 {
+    font-weight: bold;
+    font-size: 13pt;
+}
+h2 {
+    font-variant: small-caps;
+    font-weight: normal;
+}
+h3 {
+    font-weight: normal;
+    font-style: italic;
+}
+h4 { 
+    font-weight: bold;
+}
+h5 {
+    font-weight: normal;
+    font-style: italic;
+}
+h6 {
+    font-variant: small-caps;
+}
+/* Metadata */
+.title {
+    margin-top: 12.0pt;
+    margin-right: 0in;
+    margin-bottom: 12.0pt;
+    margin-left: 0in;
+    text-align: center;
+    font-weight: normal;
+    font-size: 14.0pt;
+}
+.author, .date, .caption, .affiliation {
+    margin-top:0in;
+    margin-right:0in;
+    margin-bottom:10.0pt;
+    margin-left:0in;
+    text-align:center;
+    font-size:12.0pt;
+}
+/* Footnotes */
+.footnotes {
+    margin-top: 0in;
+    margin-right: 0in;
+    margin-bottom: 0in;
+    margin-left: 0in;
+}
+.footnotes ol li {
+    font-size: 10pt;
+}
+.footnotes ol li p {
+    text-indent: 0;
+    line-height: 100%;
+    font-size: 10pt;
+    margin-bottom: 2rem;
+}
+/* Blockquotes */
+blockquote p {
+    margin-top: 12.0pt;
+    margin-right: 1.0in;
+    margin-bottom: 12.0pt;
+    margin-left: 1.0in;
+    text-align: justify;
+    text-indent: 0;
+    line-height: 120%;
+}
+/* Lists */
+li {
+  font-size: 100%; 
+  text-indent: 0;
+  line-height: 150%;
+}
+li li {
+    font-size: 100%; 
+}
 li p {
     font-size: 100%;
-    margin: .5em 0;
+    margin: .5em 0; 
+}
+li > p:first-child {
+  margin: 0; }
+
+ul ul, ul ol {
+  margin-bottom: .2em; 
+}
+ul > li {
+    position: relative;
 }
 
-h1 {
-    color: #000;
-    font-size: 2.2857em;
-    line-height: .6563em;
-    margin: .6563em 0;
+ol > li {
+    position: relative;
 }
-
-h2 {
-    color: #111;
-    font-size: 1.7143em;
-    line-height: .875em;
-    margin: .875em 0;
+/* Code */
+.poetry, pre, code {
+    font-family: Consolas;
+    text-indent: 0;
 }
-
-h3 {
-    color: #111;
-    font-size: 1.5em;
-    line-height: 1em;
-    margin: 1em 0;
+.poetry, pre {
+    display: block;
+    margin-left: 1em;
 }
-
-h4 {
-    color: #111;
-    font-size: 1.2857em;
-    line-height: 1.1667em;
-    margin: 1.1667em 0;
-}
-
-h5 {
-    color: #111;
-    font-size: 1.15em;
-    line-height: 1.3em;
-    margin: 1.3em 0;
-}
-
-h6 {
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 1.5em 0;
-}
-
-body,p,td,div {
-    color: #111;
-    font-family: "Hoefler Text", Palatino, Georgia, Times, Serif;
-    word-wrap: break-word;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    line-height: 1.5em;
-}
-
+/* Hyperlinks */
 a {
     -webkit-transition: color .2s ease-in-out;
     -moz-transition: color .2s ease-in-out;
@@ -99,14 +170,12 @@ a {
     color: #0d6ea1;
     text-decoration: none;
 }
-
 a:hover {
     color: #3593d9;
 }
-
-.footnote {
+.footnote, .footnoteRef {
     color: #0d6ea1;
-    font-size: .8em;
+    font-size: 12pt;
     vertical-align: super;
 }
 
@@ -119,13 +188,7 @@ dd {
     margin-bottom: 1em;
 }
 
-li > p:first-child {
-    margin: 0;
-}
 
-ul ul,ul ol {
-    margin-bottom: .4em;
-}
 
 caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr {
     border-spacing: 0;
@@ -223,33 +286,15 @@ figure:hover>figcaption {
     /* background: rgba(0,0,0,1) */
 }
 
-.poetry pre {
-    display: block;
-    font-family: Georgia, Garamond, serif !important;
-    font-size: 110% !important;
-    font-style: normal;
-    line-height: 1.6em;
-    margin-left: 1em;
-}
 
-.poetry pre code {
-    font-family: Georgia, Garamond, serif !important;
-}
 
-blockquote p {
-    font-size: 110%;
-    font-style: normal;
-    line-height: 1.6em;
-}
 
-.footnoteRef sup,sub {
-    font-size: 2ex;
-    font-style: normal;
+sup,sub,a.footnote {
+    font-size: 1.4ex;
     height: 0;
     line-height: 1;
     position: relative;
     vertical-align: super;
-    padding-left: 0.35ex;
 }
 
 sub {
@@ -257,11 +302,7 @@ sub {
     top: -1px;
 }
 
-p,h5 {
-    font-size: 1.1429em;
-    line-height: 1.3125em;
-    margin: 1.3125em 0;
-}
+
 
 dt,th {
     font-weight: 700;
@@ -394,56 +435,58 @@ table tr:nth-child(even),table td:nth-child(even) {
   <div id="wrapper">
       <h1 id="appendixa">Appendix A</h1>
 
-<p>CONTACT INFO FOR REFERENCES/RECOMMENDERS<br/>
-(<em>ordered based on priority/relevance</em>)<br/>
-——</p>
+<p>CONTACT INFO FOR REFERENCES/RECOMMENDERS</p>
 
-<h4 id="debbieblankenship">Debbie Blankenship</h4>
+<p>...in addition to written recommendations from my <a href="http://carlvlewis.net">CV here</a>. </p>
 
-<p>Newsroom Coordinator, Professor in Residency, Center for Collaborative Journalism at Mercer University.</p>
+<p>(<em>ordered randomly, running the gamut of employees and interns, to supervisors and professors</em>)</p>
+
+<p>--</p>
+
+<h4 id="debbieblankenship">+ Debbie Blankenship</h4>
+
+<p>Newsroom Coordinator, Journalism Professor in Residency. </p>
+
+<p><em>Center for Collaborative Journalism at Mercer University.</em></p>
 
 <ul>
-<li>Mobile: (478) 737-8962 // Desk: 737-8962</li>
+<li>Mobile: (478) 737-8962 // Desk: (478) 737-8962</li>
 <li>Email: blankenship_dr@mercer.edu</li>
-<li>Relationship: Coordinator of CCJ faculty and thus my indirect supervisor; co-advisor to student news organization along with myself.</li>
+<li>Relationship: Coordinator of CCJ faculty and thus my indirect supervisor as instructor; co-advisor to student news organization along with myself.</li>
 </ul>
 
-<h4 id="larrybrumleymediamentorformercollaborator">Larry Brumley (media mentor, former collaborator)</h4>
+<h4 id="larrybrumleymediamentorformercollaborator">+ Larry Brumley (media mentor, former collaborator)</h4>
 
-<p>Senior V.P. for Marketing and Communications and Chief of Staff, Mercer University.</p>
+<p>Senior V.P. for Marketing and Communications and Chief of Staff. Mercer University.</p>
 
 <ul>
 <li>Mobile: (478) 973-2438 // Desk:</li>
 <li>Email: brumley_ld@mercer.edu</li>
-<li>Relationship: University chief of staff and former journalist with whom I have worked on numerous occassions and can speak to my teaching abilities and leadership skills.</li>
+<li>Relationship: University chief of staff and former <a href="https://about.mercer.edu/officers/brumley/">broadcast journalist</a> with whom I have worked on numerous occassions and can speak to my teaching abilities and leadership skills.</li>
 </ul>
 
-<h4 id="susane.mcgregor">Susan E. McGregor</h4>
+<h4 id="susane.mcgregor">+ Susan E. McGregor</h4>
 
-<p>Assistant Professor &amp; Assistant Director, Tow Center for Digital Journalism</p>
+<p>Assistant Professor &amp; Assistant Director, <a href="http://towcenter.org">Tow Center for Digital Journalism</a>. </p>
 
 <ul>
 <li>Desk: (212) 854-9523</li>
 <li>Email: sem2196@columbia.edu</li>
-<li>Relationship: Former data visualization professor, mentor, inspiration for my interests in data visualization.</li>
+<li>Relationship: Former data visualization professor, mentor, inspiration for my interests in data visualization. Awared only Honors' status in her spring 2012 courses.</li>
 </ul>
 
-<h4 id="sherriemarshall">Sherrie Marshall</h4>
+<h4 id="sherriemarshall">+ <a href="http://media.mcclatchy.com/static/pdfs/2007_Summer_Fall_Extra/sherrie_marshall.pdf">Sherrie Marshall</a></h4>
 
 <p>Editor-In-Chief, The Telegraph.</p>
 
 <ul>
 <li>Desk: (478) 744-4340</li>
 <li>Email: smarshall@macon.com</li>
-<li>Former editor while working as an on-call reporter in Macon, Ga. Can testify to my dedication, even at a young age, to get the story not only right but to make it engaging.</li>
-</ul>
-
-<h4 id="avaseave">Ava Seave</h4>
-
-<p>Principal, Quantum Media and adjunct professor, Columbia Business School</p>
+<li>Former editor while working as an on-call reporter in Macon, Ga.
 
 <ul>
-<li>Professor for “Making the Business of Digital Journalism Work,” a course jointly run out of Columbia’s journalism and business schools. Later become close mentor; named me only honors student in her class.</li>
+<li>Can testify to my dedication, even at a young age, to get the story not only right but to make it engaging. Letter available upon request.</li>
+</ul></li>
 </ul>
 
 <h4 id="craigsimsv.p.formobilestrategymorrispublishing">Craig Sims, V.P. for Mobile Strategy, Morris Publishing</h4>
@@ -466,6 +509,14 @@ table tr:nth-child(even),table td:nth-child(even) {
 <li>Relationship: Colleague from Morris Publishing Group who initially invited me to lead the first data journalism workshop at <em>The Florida Times-Union</em> in Jacksonville, Fl.</li>
 </ul>
 
+<h4 id="avaseave">Ava Seave</h4>
+
+<p>Principal, Quantum Media and adjunct professor, Columbia Business School</p>
+
+<ul>
+<li>Professor for “Making the Business of Digital Journalism Work,” a course jointly run out of Columbia’s journalism and business schools. Later become close mentor; named me only honors student in her class.</li>
+</ul>
+
 <h4 id="emilybellformerheadofguardiandigitalnowatcolumbia">Emily Bell (former head of Guardian Digital, now at Columbia)</h4>
 
 <p>Professor of Professional Practice &amp; Director, Tow Center for Digital Journalism.</p>
@@ -473,7 +524,17 @@ table tr:nth-child(even),table td:nth-child(even) {
 <ul>
 <li>Desk: (212) 854-1945</li>
 <li>Email: ebell@columbia.edu</li>
-<li>Relationship: Oversaw parts of my work and research while a student at Columbia Journalism School.</li>
+<li>Relationship: Oversaw parts of my work and research while a student at Columbia Journalism School, particularly at the 2012 Innovation Showcase.</li>
+</ul>
+
+<h4 id="stacyjenningsdirectorofmarketingsmn">Stacy Jennings (Director of Marketing, SMN)</h4>
+
+<p>Marketing Director, Savannah Morning News.</p>
+
+<ul>
+<li>Mobile: (912) 224-1354 // Desk: (912) 652-0236</li>
+<li>Email: stacy.jennings@savannahnow.com</li>
+<li>Relationship: Indirect supervisor with whom I worked to bridge the traditional ‘wall’ between editorial and sales while maintaining journalistic integrity and autonomy.</li>
 </ul>
 
 <h4 id="stacyjenningsdirectorofmarketingsmn">Stacy Jennings (Director of Marketing, SMN)</h4>
@@ -508,12 +569,10 @@ table tr:nth-child(even),table td:nth-child(even) {
 
 <h4 id="heatherhenleyeditordosavannah">Heather Henley (Editor, DoSavannah)</h4>
 
-<p>Editor of DO Savannah, Savannah Morning News.</p>
-
-<ul>
-<li>Desk: (912) 652-0295</li>
-<li>Email: heather.henley@savannahnow.com.</li>
-</ul>
+<p>Editor of DO Savannah, a Morning News Media publication.<br/>
++ Desk: (912) 652-0295<br/>
++ Email: heather.henley@savannahnow.com.<br/>
++ Relationship: Coordinated to build, design, QA and launch <a href="http://dosavannah.com">Do Savannah</a>, an alternative weekly for the market's fast-growing entertainment and nightlife scene. Taught basic and some advanced aspects of CMS (Drupal 7), as well as best social media strategies. </p>
 
 <h4 id="rachelgardnerdigitalmediasalesmanagersmn">Rachel Gardner (Digital Media Sales Manager, SMN)</h4>
 
@@ -621,6 +680,7 @@ table tr:nth-child(even),table td:nth-child(even) {
 
 <ul>
 <li>Desk: (478) 301-2700</li>
+<li>Mobile: TK</li>
 <li>Email: editor@mercercluster.com</li>
 </ul>
 
@@ -629,7 +689,8 @@ table tr:nth-child(even),table td:nth-child(even) {
 <p>Founder, Groundsource.</p>
 
 <ul>
-<li>Desk:</li>
+<li>Desk: (478) 301-2137</li>
+<li>Mobile: (612) 501-0690</li>
 <li>Email: andrew@groundsourcing.com</li>
 </ul>
 
@@ -640,15 +701,17 @@ table tr:nth-child(even),table td:nth-child(even) {
 <ul>
 <li>Desk: (914) 378-2029</li>
 <li>Email: kk2715@columbia.edu</li>
+<li>Relationship: Professor, Columbia Journalism School</li>
 </ul>
 
 <h4 id="avaseavecolumbiabusinessschool">Ava Seave (Columbia Business School)</h4>
 
-<p>Adjunct Professor, Columbia Business School.</p>
+<p>Principal, Quantum Media. Adjunct Professor, Columbia Business School.</p>
 
 <ul>
 <li>Desk: (212) 854-3491</li>
 <li>Email: as2486@columbia.edu</li>
+<li>Relationship: Business mentor, professor and who taught me what terms like “competitive advantage” and “network effects really mean.</li>
 </ul>
 
 <h4 id="tomrowleythetelegraph-uk">Tom Rowley (The Telegraph - UK)</h4>
@@ -656,8 +719,10 @@ table tr:nth-child(even),table td:nth-child(even) {
 <p>Special Correspondant, The Telegraph.</p>
 
 <ul>
-<li>Desk:</li>
+<li>Mobile: (+1) 0207 9313356</li>
+<li>Desk: (+1) 07545 138950</li>
 <li>Email: tom.rowley@telegraph.co.uk</li>
+<li>Relationship: Editor at *The Oxford Student at the same time as I was. Now serves as a reporter for The Telegraph (U.</li>
 </ul>
 
 <h4 id="coreymenscherthedailybeast">Corey Menscher (The Daily Beast)</h4>
@@ -667,6 +732,7 @@ table tr:nth-child(even),table td:nth-child(even) {
 <ul>
 <li>Desk: (212) 314-7400</li>
 <li>Email: clmensch@gmail.com</li>
+<li>Relationship: Adjunct professor, mentor</li>
 </ul>
 
 <h4 id="brianabelsonenigma.io">Brian Abelson (Enigma.io)</h4>
@@ -676,6 +742,7 @@ table tr:nth-child(even),table td:nth-child(even) {
 <ul>
 <li>Desk: (800) 510-2856</li>
 <li>Email: brianabelson@gmail.com</li>
+<li>Relationship: Fellow member of CSV Soundsystem, a group of journalism-interested hackers/programmers. Can attest to data science skills.</li>
 </ul>
 
 <h4 id="michaelkellerajam">Michael Keller (AJAM)</h4>
@@ -695,7 +762,8 @@ table tr:nth-child(even),table td:nth-child(even) {
 
 <ul>
 <li>Desk: (703) 424-4744</li>
-<li>Email: dmedian@qz.com</li>
+<li>Email: dmedina@qz.com</li>
+<li>Relationship: Classmate, menthe, someone who can speak well to my ability to lead a group.</li>
 </ul>
 
 <h4 id="c.j.sinnerminnstartribune">C.J. Sinner (Minn Star Tribune)</h4>
@@ -705,6 +773,7 @@ table tr:nth-child(even),table td:nth-child(even) {
 <ul>
 <li>Desk: (612) 673-4387</li>
 <li>Email: cj.sinner@startribune.com</li>
+<li>Relationship: Former classmate, hackathon participant, open-source colleague.</li>
 </ul>
 
 <h4 id="daniels.groceallstate">Daniel S. Groce (Allstate)</h4>
@@ -714,6 +783,7 @@ table tr:nth-child(even),table td:nth-child(even) {
 <ul>
 <li>Desk: (678) 589-6102</li>
 <li>Email: Daniel.Groce@allstate.com</li>
+<li>Relationship: Fellow peer advisor, College Hill Alliance collaborator and member of numerous service learning organizations. Can speak to leadership, teaching and technology abilities</li>
 </ul>
 
 <h4 id="arlenemorgandeanofpulitzerprizes">Arlene Morgan (Dean of Pulitzer Prizes)</h4>
@@ -730,7 +800,7 @@ table tr:nth-child(even),table td:nth-child(even) {
 <p>Social Media Manager, VisitSavannah.</p>
 
 <ul>
-<li>Desk:</li>
+<li>Desk: (912) 644-6453</li>
 <li>Email: abrock@visitsavannah.com.</li>
 </ul>
 
