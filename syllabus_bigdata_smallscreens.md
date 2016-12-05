@@ -6,12 +6,12 @@
 
 > **“Data journalism is the new punk. Anyone can do it.” **
 
-**     - **Simon Rogers*, The Guardian*
+- Simon Rogers, The Guardian
 
 
 > “If it doesn't work on mobile, it doesn't work.”
 
-   -Brian Boyer, NPR Visuals Team Leader. 
+-Brian Boyer, NPR Visuals Team Leader. 
 * * *
 
 ###  COURSE LECTURER/LAB INSTRUCTOR: CARL V. LEWIS
@@ -37,7 +37,7 @@ Part graphic design, part basic statistics, part computer science, part data sci
 
 ## III Technologies and Tools Covered
 
-While data journalism technologies will inevitably evolve and change with time, the course will – for purposes of experience and workflow – cover the real-world application of current “Web 2.0” responsive data visualization technologies and standards. These conventions include the basic building blocks of a modern native web app –– HTML, CSS and JavaScript –– as well as the most commonly used data storage formats in currency today: CSV (comma-separated-value files) and JSON (JavaScript Object Notation). If any or all of these terms sound scary or foreign to you at the start of the course, **do not fear:** You will not be expected to leave this course as a JavaScript engineer, nor a data scientist, nor a web developer. But you will be expected to carry out simple, guided in-class assignments that will help you to begin to understand how these various technologies appear in text (or, more precisely, code) and how they interact together to render a web page in the modern browser. **In addition, if you at any point feel like you  need extra help understanding *any* concept or technology outside of class, you are encouraged to schedule one-on-one instruction time with me using the schedule reservation booking page at the beginning of this syllabus. Please allow 24 hours before an upcoming deadline to schedule a meeting to ensure you leave adequate time for us to meet. **
+While data journalism technologies will inevitably evolve and change with time, the course will – for purposes of experience and workflow – cover the real-world application of current “Web 2.0” responsive data visualization technologies and standards. These conventions include the basic building blocks of a modern native web app –– HTML, CSS and JavaScript –– as well as the most commonly used data storage formats in currency today: CSV (comma-separated-value files) and JSON (JavaScript Object Notation). If any or all of these terms sound scary or foreign to you at the start of the course, **do not fear:** You will not be expected to leave this course as a JavaScript engineer, nor a data scientist, nor a web developer. But you will be expected to carry out simple, guided in-class assignments that will help you to begin to understand how these various technologies appear in text (or, more precisely, code) and how they interact together to render a web page in the modern browser. **In addition, if you at any point feel like you  need extra help understanding *any* concept or technology outside of class, you are encouraged to schedule one-on-one instruction time with me using the schedule reservation booking page at the beginning of this syllabus. Please allow 24 hours before an upcoming deadline to schedule a meeting to ensure you leave adequate time for us to meet.**
  
 For data journalism *production* purposes, we'll primarily be employing a number of open-source tools and libraries that require little-to-no coding knowledge, and instead focus the bulk of our efforts more upon data sourcing, processing, analysis, design and presentation. *That said, we will still be conducting regular exercises and assignments that introduce basic programming concepts and practices*, as graphical tools cannot in all cases do all the heavy lifting for us. The more complex the dataset, the higher the likelihood some coding may be needed.
 
@@ -45,8 +45,8 @@ For data journalism *production* purposes, we'll primarily be employing a number
 
 Each class will include different assigned readings from mostly free online sources (blog posts, essays, open-source e-books or excerpts from other sources) made available for download at least three (3) weeks in advance of each class on the course website listed above. That said,  three (3) full textbooks will be required for purchase or loan for the duration of the course: 
 
-1. Cairo, Alberto. *The Functional Art: An Introduction to Information Graphics and Visualization. *Berkeley, CA :New Riders, 2013. Print.
-2. Hinderman, Bill. *Building Responsive Data Visualization for the Web.* Indianapolis, IN: Wiley, 2016. Print.
+1. Cairo, Alberto. *The Functional Art: An Introduction to Information Graphics and Visualization*. Berkeley, CA :New Riders, 2013. Print.
+2. Hinderman, Bill. *Building Responsive Data Visualization for the Web*. Indianapolis, IN: Wiley, 2016. Print.
 3. Mollerup, Per. *Data Design: Visualising quantities, locations, connections*. Bloomsbury, 2015. Print.
 
 In addition, students will be expected to download and have on-hand the full-text of *The Data Journalism Handbook: How Journalists Can Use Numbers to Improve the News *from O'Reilly Press (available for free download at [datajournalismhandbook.com](http://datajournalismhandbook.com/)). We will also read excerpts from a number of other books on the subjects of information design and data journalism, which are listed at the end of the syllabus and which I will provide for you.
@@ -68,7 +68,7 @@ Successful students will:
 * Participate meaningfully in class discussions on peer critiques and assigned readings and — to a lesser extent -- during lab tutorials. This does not mean participation for the sake of participation. This means offering insightful, unique, critical analysis of the text and subject at hand that contributes and furthers discussion, or raises otherwise new insights. You will be given written feedback from me regarding your performance in this aspect of the course three times during the semester: once at week six (6), again at week twelve (12), then once again two (2) weeks prior to the end of term **(participation accounts for 20% of final course grade**).
 *  By the end of the course, you should be able to contribute meaningfully to a final group project that takes the form of a data-driven news application that allows for dynamic data exploration among multiple hierarchies of information and responds appropriately to a range of screen sizes . Accompanying the visual(s) may or may not be a textual. image-based and/or video narrative describing the effects and providing human voices to the story conveyed by the data. You may here also cite anecdotal evidence such as original reporting, including remarks from individuals who  specialize in the topic of your project. This project will be presented in front of a panel of well-known data and visual journalists a week prior to its final due date (Dec. 14), and judges will offer feedback on ways you might improve your project before it is officially submitted to the instructor via email **(final group project accounts for 20% of course grade)**.
 
-### Redo policY: 
+### Redo Policy 
 
 Given that data visualization is an inherently visual specialization and often best critiqued by redesign, you will each get one chance to redesign or “redo” any single one (1) of the three (3) deadline data journalism projects if you are unhappy with your score. This effectively allows you to use the feedback given to you from me to improve the visualization and/or journalistic strength of your original project and submit it again for re-evaluation within ten (10) days of the date the project score and feedback was returned to you. You also will receive one (1) free pass to use if you fail to submit a critique/reading before deadline. With this pass, as long as you make up the post within one week of the due date, you will not be penalized for the late submission.  
 
